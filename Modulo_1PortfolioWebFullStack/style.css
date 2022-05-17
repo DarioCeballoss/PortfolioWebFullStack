@@ -137,6 +137,8 @@ span {
 #skils {
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
 }
 
 span.progres {
