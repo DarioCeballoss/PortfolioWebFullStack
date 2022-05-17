@@ -1,5 +1,5 @@
 body {
-  max-width: 1000px;
+  max-width: 800px;
   margin: auto;
   /*background-color: black;*/
 }
@@ -8,14 +8,11 @@ body {
 .BarraSup {
   display: flex;
   justify-content: flex-end;
-  height: 50px;
-
+  height: 30px;
+  margin: 2px;
 }
 
-
-
-/* DIV LOGO Y ANIMACION*/
-
+/* DIV LOGO Y ANIMACION */
 #LogoAnimado {
   display: flex;
   border-color: lightslategrey;
@@ -48,7 +45,7 @@ body {
 
 .logoNom {
   position: relative;
-  width: 600px;
+  width: 50%;
   margin: auto;
   animation-name: aparece;
   animation-duration: 10s;
@@ -97,6 +94,71 @@ body {
   }
 
   100% {
-    width: 600px;
+    width: 50%;
   }
+}
+
+/* ************************** */
+/* DIV EXPERIENCIA Y EDICACION*/
+/* ************************** */
+
+h2 {
+  color: #f0ad4e;
+  font-weight: bold;
+}
+
+.ExpEdu {
+  display: flex;
+  margin: 10px;
+  /*border: 3px solid black;
+  background:red;*/
+  justify-content: space-around;
+  width: 90%;
+  height: 150px;
+  align-items: center;
+}
+
+span {
+  max-width: 80%;
+}
+
+.LogoInstitucion {
+  max-width: 50px;
+  flex-basis: 29%;
+}
+
+.Descripcion {
+  flex-grow: 100px;
+}
+
+/* ************************** */
+/*           SKILS            */
+/* ************************** */
+#skils {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span.progres {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+  color: #3949AB;
+}
+
+.canvas-w {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+/* ************************** */
+/*         PROYECTOS          */
+/* ************************** */
+
+.Proyectos {
+  margin: 30px;
 }
