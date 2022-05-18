@@ -17,9 +17,9 @@
 <body>
     <header>
         <div class="BarraSup">
-            <img src="img/LogoArg.png" alt="Logo Personal" style="margin-right: auto">
-            <img src="img/LogoGitH.png" alt="Logo GuitHub">
-            <img src="img/LogoLinkedin.png" alt="Logo Linkedin">
+            <img src="img/LogoArg.png" class="espaciado" alt="Logo Personal" style="margin-right: auto">
+            <img src="img/LogoGitH.png" class="espaciado" alt="Logo GuitHub">
+            <img src="img/LogoLinkedin.png" class="espaciado" alt="Logo Linkedin">
             <button type="button" class="btn btn-warning">Iniciar sesión</button>
         </div>
         <div id="LogoAnimado">
@@ -38,7 +38,12 @@
 
             </span>
             <span style="width: 550px;">
-                <h3> Sobre mi</h3>
+                <span class="" style=" display:flex; justify-content: flex-end;">
+                    <h3 style="margin-right: auto"> Sobre mi</h3>
+                        <button class="btnEditElim , edit"></button>
+                        <button class="btnEditElim , elim"></button>
+                    
+                </span>
                 <p>
                     Mi motivación principal es el crecimiento dentro de la institución, lo que me incentiva a
                     concentrarme
@@ -67,19 +72,9 @@
                         repellendus dolores numquam.
                     </p>
                 </span>
-            </div>
-
-            <div class="caja">
-                <img class="LogoInstitucion" src="img/LogoLinkedin.png" alt="">
-                <span>
-                    <h3> Lorem Ipsum</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam aut quos nesciunt,
-                        repellat
-                        cum earum. At laudantium quisquam officia necessitatibus, itaque iste asperiores iusto, autem,
-                        rem
-                        repellendus dolores numquam.
-                    </p>
+                <span class="cajaBtn">
+                    <button class="btnEditElim , edit"></button>
+                    <button class="btnEditElim , elim"></button>
                 </span>
             </div>
 
@@ -94,6 +89,28 @@
                         rem
                         repellendus dolores numquam.
                     </p>
+                </span>
+                <span class="cajaBtn">
+                    <button class="btnEditElim , edit"></button>
+                    <button class="btnEditElim , elim"></button>
+                </span>
+            </div>
+
+            <div class="caja">
+                <img class="LogoInstitucion" src="img/LogoLinkedin.png" alt="">
+                <span>
+                    <h3> Lorem Ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam aut quos nesciunt,
+                        repellat
+                        cum earum. At laudantium quisquam officia necessitatibus, itaque iste asperiores iusto, autem,
+                        rem
+                        repellendus dolores numquam.
+                    </p>
+                </span>
+                <span class="cajaBtn">
+                    <button class="btnEditElim , edit"></button>
+                    <button class="btnEditElim , elim"></button>
                 </span>
             </div>
         </article>
@@ -114,6 +131,10 @@
                         repellendus dolores numquam.
                     </p>
                 </span>
+                <span class="cajaBtn">
+                    <button class="btnEditElim , edit"></button>
+                    <button class="btnEditElim , elim"></button>
+                </span>
             </div>
 
             <div class="caja">
@@ -128,6 +149,10 @@
                         repellendus dolores numquam.
                     </p>
                 </span>
+                <span class="cajaBtn">
+                    <button class="btnEditElim , edit"></button>
+                    <button class="btnEditElim , elim"></button>
+                </span>
             </div>
             <div class="caja">
                 <img class="LogoInstitucion" src="img/LogoLinkedin.png" alt="">
@@ -140,44 +165,53 @@
                         rem
                         repellendus dolores numquam.
                     </p>
+                </span>
+                <span class="cajaBtn">
+                    <button class="btnEditElim , edit"></button>
+                    <button class="btnEditElim , elim"></button>
                 </span>
             </div>
         </article>
 
 
         <h2> Skils</h2>
-        <article id="skils">
+        <article>
+            <span class="cajaBtn" style=" display:flex; justify-content: flex-end;">
+                <button class="btnEditElim , edit"></button>
+                <button class="btnEditElim , elim"></button>
+            </span>
+            <span id="skils">
 
-            <div class="canvas-w">
-                <canvas id="circHTML" width="200" height="200"></canvas>
-                <span id="porcHTML" class="progres"></span>
-            </div>
+                <div class="canvas-w">
+                    <canvas id="circHTML" width="200" height="200"></canvas>
+                    <span id="porcHTML" class="progres"></span>
+                </div>
 
-            <div class="canvas-w">
-                <canvas id="circCSS" width="200" height="200"></canvas>
-                <span id="porcCSS" class="progres"></span>
-            </div>
+                <div class="canvas-w">
+                    <canvas id="circCSS" width="200" height="200"></canvas>
+                    <span id="porcCSS" class="progres"></span>
+                </div>
 
-            <div class="canvas-w">
-                <canvas id="circJS" width="200" height="200"></canvas>
-                <span id="porcJS" class="progres"></span>
-            </div>
+                <div class="canvas-w">
+                    <canvas id="circJS" width="200" height="200"></canvas>
+                    <span id="porcJS" class="progres"></span>
+                </div>
 
-            <div class="canvas-w">
-                <canvas id="circBootstrap" width="200" height="200"></canvas>
-                <span id="porcBootstrap" class="progres"></span>
-            </div>
+                <div class="canvas-w">
+                    <canvas id="circBootstrap" width="200" height="200"></canvas>
+                    <span id="porcBootstrap" class="progres"></span>
+                </div>
 
-            <div class="canvas-w">
-                <canvas id="circAngular" width="200" height="200"></canvas>
-                <span id="porcAngular" class="progres"></span>
-            </div>
+                <div class="canvas-w">
+                    <canvas id="circAngular" width="200" height="200"></canvas>
+                    <span id="porcAngular" class="progres"></span>
+                </div>
 
-            <div class="canvas-w">
-                <canvas id="circSQL" width="200" height="200"></canvas>
-                <span id="porcSQL" class="progres"></span>
-            </div>
-
+                <div class="canvas-w">
+                    <canvas id="circSQL" width="200" height="200"></canvas>
+                    <span id="porcSQL" class="progres"></span>
+                </div>
+            </span>
         </article>
 
 
@@ -185,27 +219,43 @@
         <article>
 
             <div class="Proyectos">
-                <h3>PROYECTO 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis quam modi ab nisi et
-                    quo libero repudiandae expedita? Aliquid consectetur fuga reprehenderit molestias expedita inventore
-                    maxime vitae reiciendis soluta.</p>
-                <button type="button" class="btn btn-warning">Ver el Sitio</button>
-            </div>
-            <div class="Proyectos">
-                <h3>PROYECTO 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis quam modi ab nisi et
-                    quo libero repudiandae expedita? Aliquid consectetur fuga reprehenderit molestias expedita inventore
-                    maxime vitae reiciendis soluta.</p>
-                <button type="button" class="btn btn-warning">Ver el Sitio</button>
-            </div>
-            <div class="Proyectos">
-                <h3>PROYECTO 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis quam modi ab nisi et
-                    quo libero repudiandae expedita? Aliquid consectetur fuga reprehenderit molestias expedita inventore
-                    maxime vitae reiciendis soluta.</p>
-                <button type="button" class="btn btn-warning">Ver el Sitio</button>
-            </div>
 
+                <span class="caja">
+                    <span>
+                        <h3>PROYECTO 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis quam modi ab
+                            nisi
+                            et
+                            quo libero repudiandae expedita? Aliquid consectetur fuga reprehenderit molestias expedita
+                            inventore
+                            maxime vitae reiciendis soluta.</p>
+                    </span>
+                    <span class="cajaBtn">
+                        <button class="btnEditElim , edit"></button>
+                        <button class="btnEditElim , elim"></button>
+                    </span>
+                </span>
+                <button type="button" class="btn btn-warning">Ver el Sitio</button>
+            </div>
+            <div class="Proyectos">
+
+                <span class="caja">
+                    <span>
+                        <h3>PROYECTO 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis quam modi ab
+                            nisi
+                            et
+                            quo libero repudiandae expedita? Aliquid consectetur fuga reprehenderit molestias expedita
+                            inventore
+                            maxime vitae reiciendis soluta.</p>
+                    </span>
+                    <span class="cajaBtn">
+                        <button class="btnEditElim , edit"></button>
+                        <button class="btnEditElim , elim"></button>
+                    </span>
+                </span>
+                <button type="button" class="btn btn-warning">Ver el Sitio</button>
+            </div>
         </article>
     </Section>
 
