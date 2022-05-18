@@ -1,7 +1,12 @@
 body {
   max-width: 800px;
   margin: auto;
+  padding: 5px;
   /*background-color: black;*/
+}
+
+p {
+  text-align: justify;
 }
 
 /* Barra Superior ###########  */
@@ -99,15 +104,27 @@ body {
 }
 
 /* ************************** */
-/* DIV EXPERIENCIA Y EDICACION*/
+/*           SOBREMI          */
+/* ************************** */
+#fotoPerfil {
+  border-radius: 100%;
+  max-width: 150px;
+  position: absolute;
+  top: 180px;
+  margin: 60px;
+}
+
+/* ************************** */
+/*  EXPERIENCIA Y EDICACION   */
 /* ************************** */
 
 h2 {
   color: #f0ad4e;
   font-weight: bold;
+  margin-left: 20px;
 }
 
-.ExpEdu {
+.caja {
   display: flex;
   margin: 10px;
   /*border: 3px solid black;
@@ -118,13 +135,10 @@ h2 {
   align-items: center;
 }
 
-span {
-  max-width: 80%;
-}
-
 .LogoInstitucion {
-  max-width: 50px;
-  flex-basis: 29%;
+  width: 50px;
+  margin-left: 70px;
+  margin-right: 130px;
 }
 
 .Descripcion {
@@ -136,8 +150,9 @@ span {
 /* ************************** */
 #skils {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
