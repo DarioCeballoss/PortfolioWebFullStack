@@ -53,12 +53,10 @@ function modificaContenido(de,a) {
   document.getElementById(de).style.display = "block"; // ABRE EL IMPUT
   document.getElementById(a).style.display = "none"; // CIERRA EL PARRAFO
   texto = document.getElementById(a).innerHTML; // TOMA EL TEXTO DEL PARRAFO
-  texto = texto.replace(/(\r\n|\n|\r|<br>)/g, " ");// con esto saco los saltos de line
-  texto = texto.replace(/ {2,}/g, "");// aca saco los espacios de mas 
+  texto = texto.replace(/(\r\n|\n|\r|<br>| {2,})/g, "");// con esto saco los saltos de line - pase a esta linea los espacios de mas
+  //texto = texto.replace(/ {2,}/g, "");// aca saco los espacios de mas 
   texto=texto.trim();
   //texto = texto.replace(/ /s, "*");
-  
- 
   //console.log(texto); // lo veo en consola para controlar
   document.getElementById(de).value = texto; // LO PLASMA EN EL IMPUT
 };
@@ -66,7 +64,7 @@ function modificaContenido(de,a) {
 
 function agregaContenidoText(de2,a2) {
   texto = document.getElementById(de2).value; // TOMA EL texto DEL IPUT
-  console.log(texto);// veo en cosola para control 
+  //console.log(texto);// veo en cosola para control 
   document.getElementById(a2).innerText = texto; // Coloca el valor en el parrafo
   document.getElementById(de2).style.display = "none";
   document.getElementById(a2).style.display = "block";

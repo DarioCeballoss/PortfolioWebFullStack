@@ -193,6 +193,7 @@ span.progres {
 .cajaBtn{
   margin-top: 30px;
   margin-left: 20px;
+  width: 30px;
 }
 .edit{
   background-image: url("img/editA.png");

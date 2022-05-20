@@ -40,18 +40,20 @@
             <span style="width: 550px;">
                 <span class="" style=" display:flex; justify-content: flex-end;">
                     <h3 style="margin-right: auto"> Sobre mi</h3>
-                    <button onclick="modificaContenido('editorDeTexto', 'textoEditable')" class="btnEditElim , edit"></button>
+                    <button onclick="modificaContenido('editorDeTexto', 'textoEditable')"
+                        class="btnEditElim , edit"></button>
                     <button class="btnEditElim , elim"></button>
 
                 </span>
                 <p id="textoEditable">
                     Mi motivación principal es el crecimiento dentro de la institución, lo que me incentiva a
                     concentrarme en mis tres cualidades más destacadas, “Autoexigente, proactivo, meritocratico”. Me
-                    considero una persona en continuo crecimiento, me gusta capacitarme y estudiar diversas áreas de 
+                    considero una persona en continuo crecimiento, me gusta capacitarme y estudiar diversas áreas de
                     interés. Complemento muy bien trabajando en equipo, ya sean amplios o reducidos.
 
                 </p>
-                <textarea id="editorDeTexto" onchange="agregaContenidoText('editorDeTexto', 'textoEditable')"style="display:  none; width: 550px; height: 110px; text-align: justify;">  </textarea>
+                <textarea id="editorDeTexto" onchange="agregaContenidoText('editorDeTexto', 'textoEditable')"
+                    style="display:  none; width: 550px; height: 110px; text-align: justify;">  </textarea>
             </span>
 
         </article>
@@ -62,18 +64,20 @@
 
             <div class="caja">
                 <img class="LogoInstitucion" src="img/LogoLinkedin.png" alt="">
-                <span>
-                    <h3> Lorem Ipsum</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam aut quos nesciunt,
-                        repellat
-                        cum earum. At laudantium quisquam officia necessitatibus, itaque iste asperiores iusto, autem,
-                        rem
-                        repellendus dolores numquam.
+                <span style="width: 500px;">
+                    <h3 id="titExp1"> Lorem Ipsum</h3>
+                    <input type="text" id="editExpTit1" onchange="agregaContenidoText('editExpTit1', 'titExp1')" style="display: none;" >
+                    <p id="textExp1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam inventore ducimus officia sequi
+                        odit iure dolorem necessitatibus. Quis aut, quibusdam ipsam eos vero error dolorum autem labore
+                        natus suscipit debitis!
                     </p>
+                    <textarea id="editExp1" onchange="agregaContenidoText('editExp1', 'textExp1')"
+                        style="display:  none; width: 500px; height: 110px; text-align: justify;">  </textarea>
+
                 </span>
                 <span class="cajaBtn">
-                    <button class="btnEditElim , edit"></button>
+                    <button onclick="modificaContenido('editExp1', 'textExp1'); modificaContenido('editExpTit1', 'titExp1'); " class="btnEditElim , edit"></button>
                     <button class="btnEditElim , elim"></button>
                 </span>
             </div>
