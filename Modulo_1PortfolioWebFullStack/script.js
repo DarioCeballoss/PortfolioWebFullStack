@@ -53,13 +53,13 @@ function modificaContenido(de,a) {
   document.getElementById(de).style.display = "block"; // ABRE EL IMPUT
   document.getElementById(a).style.display = "none"; // CIERRA EL PARRAFO
   texto = document.getElementById(a).innerHTML; // TOMA EL TEXTO DEL PARRAFO
-  texto = texto.replace(/(\r\n|\n|\r|<br>)/g, " ");
-  texto = texto.replace(/ {2,}/g, "");
+  texto = texto.replace(/(\r\n|\n|\r|<br>)/g, " ");// con esto saco los saltos de line
+  texto = texto.replace(/ {2,}/g, "");// aca saco los espacios de mas 
   texto=texto.trim();
   //texto = texto.replace(/ /s, "*");
   
  
-  console.log(texto); // lo veo en consola para controlar
+  //console.log(texto); // lo veo en consola para controlar
   document.getElementById(de).value = texto; // LO PLASMA EN EL IMPUT
 };
 
