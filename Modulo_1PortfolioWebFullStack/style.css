@@ -193,7 +193,7 @@ span.progres {
 .cajaBtn{
   margin-top: 30px;
   margin-left: 20px;
-  width: 30px;
+  
 }
 .edit{
   background-image: url("img/editA.png");
@@ -202,4 +202,21 @@ span.progres {
 .elim{
   background-image: url("img/eliminA.png");
   background-size: cover;
+}
+
+/* ************************** */
+/*  ventana emergente         */
+/* ************************** */
+
+.ventanaEmergente{
+  width: 500px;
+  height: 700px;
+  background-color: white;
+  position:fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 3px solid lightslategrey ;
+  border-radius: 30px;
+
 }
