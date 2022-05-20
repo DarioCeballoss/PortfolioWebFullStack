@@ -40,18 +40,18 @@
             <span style="width: 550px;">
                 <span class="" style=" display:flex; justify-content: flex-end;">
                     <h3 style="margin-right: auto"> Sobre mi</h3>
-                        <button class="btnEditElim , edit"></button>
-                        <button class="btnEditElim , elim"></button>
-                    
+                    <button onclick="modificaContenido('editorDeTexto', 'textoEditable')" class="btnEditElim , edit"></button>
+                    <button class="btnEditElim , elim"></button>
+
                 </span>
-                <p>
+                <p id="textoEditable">
                     Mi motivación principal es el crecimiento dentro de la institución, lo que me incentiva a
-                    concentrarme
-                    en mis tres cualidades más destacadas, “Autoexigente, proactivo, meritocratico”. Me considero
-                    una
-                    persona en continuo crecimiento, me gusta capacitarme y estudiar diversas áreas de interés.
-                    Complemento muy bien trabajando en equipo, ya sean amplios o reducidos.
+                    concentrarme en mis tres cualidades más destacadas, “Autoexigente, proactivo, meritocratico”. Me
+                    considero una persona en continuo crecimiento, me gusta capacitarme y estudiar diversas áreas de 
+                    interés. Complemento muy bien trabajando en equipo, ya sean amplios o reducidos.
+
                 </p>
+                <textarea id="editorDeTexto" onchange="agregaContenidoText('editorDeTexto', 'textoEditable')"style="display:  none; width: 550px; height: 110px; text-align: justify;">  </textarea>
             </span>
 
         </article>

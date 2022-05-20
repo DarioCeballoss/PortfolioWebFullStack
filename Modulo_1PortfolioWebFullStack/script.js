@@ -45,3 +45,29 @@ function progresCircule(idCirculo, idPorcentaje, valPorcentaje, imgSkil) {
   c.stroke();
 
 }
+
+//MODIFICA CONTENIDO
+// xxxxxxxxxxxxxxxx
+let texto = "";
+function modificaContenido(de,a) {
+  document.getElementById(de).style.display = "block"; // ABRE EL IMPUT
+  document.getElementById(a).style.display = "none"; // CIERRA EL PARRAFO
+  texto = document.getElementById(a).innerHTML; // TOMA EL TEXTO DEL PARRAFO
+  texto = texto.replace(/(\r\n|\n|\r|<br>)/g, " ");
+  texto = texto.replace(/ {2,}/g, "");
+  texto=texto.trim();
+  //texto = texto.replace(/ /s, "*");
+  
+ 
+  console.log(texto); // lo veo en consola para controlar
+  document.getElementById(de).value = texto; // LO PLASMA EN EL IMPUT
+};
+
+
+function agregaContenidoText(de2,a2) {
+  texto = document.getElementById(de2).value; // TOMA EL texto DEL IPUT
+  console.log(texto);// veo en cosola para control 
+  document.getElementById(a2).innerText = texto; // Coloca el valor en el parrafo
+  document.getElementById(de2).style.display = "none";
+  document.getElementById(a2).style.display = "block";
+};
